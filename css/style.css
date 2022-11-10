@@ -1,16 +1,31 @@
 body {
   width: 65%;
   margin: auto;
-  background-color: #EDEDED;
+  background-color: #233629;
 }
 h1, h2 {
   text-align: center;
+  color: white;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(255, 0, 242),
+        0 0 82px rgb(255, 0, 242),
+        0 0 92px rgb(255, 0, 242),
+        0 0 102px rgb(255, 0, 242),
+        0 0 151px rgb(255, 0, 242);
+                  
+  @import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
 }
+
 section {
-  border: 2px solid #333;
+  border-image: linear-gradient(45deg, rgb(255, 35, 189), rgb(119, 0, 255)) 1;
   margin: 1rem 0;
   padding: 1rem;
-  background-color: #FFF;
+  background-color: rgb(11, 48, 25);
 }
 main {
   display: grid;
@@ -22,6 +37,7 @@ main section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .images {
   width: 100%;
@@ -48,22 +64,25 @@ section.scoreboard {
   main img {transform: scale(.9);}
 }
 #result {
-  border-bottom: 2px dotted #AAA;
+  border-bottom: 2px dotted rgb(255, 0, 242);
   padding-bottom: 1rem;
   grid-column-start: 1;
   grid-column-end: 3;
+  color: white;
 }
 .score {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 #pscore, #oscore {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1;
   margin-bottom: .25rem;
+  color: white;
 }
 p.label {
   line-height: 1;
