@@ -42,12 +42,18 @@ function game(x){
 
   if (sessionStorage.result == "win") {
     document.getElementById('result').innerHTML="you win";
+    localStorage.wins++;
+    document.getElementById("winNumber").innerHTML = localStorage.wins;
   }
   else if (sessionStorage.result == "lose") {
     document.getElementById('result').innerHTML="you lose";
+    localStorage.losses++;
+    document.getElementById("loseNumber").innerHTML = localStorage.losses;
   }
   else if (sessionStorage.result == "tie") {
     document.getElementById('result').innerHTML="you tie";
+    localStorage.ties++;
+    document.getElementById("tieNumber").innerHTML = localStorage.ties;
   }
 
 }
