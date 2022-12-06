@@ -39,7 +39,7 @@ function game(x){
   if (sessionStorage.playerChoice == sessionStorage.opponentChoice) {
     sessionStorage.result = "tie";
   }
-
+console.log (sessionStorage.result);
   if (sessionStorage.result == "win") {
     document.getElementById('result').innerHTML="you win";
     localStorage.wins++;
